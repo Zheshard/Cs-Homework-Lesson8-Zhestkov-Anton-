@@ -6,7 +6,7 @@ int sizeLine = InputNumber("Введите количество строк: ");
 const int minValue = 0;
 const int maxValue = 10;
 System.Console.WriteLine();
-int[,] arrayRandomNumbers = Fill2DArrayWithRandomRealNumbers(sizeLine, sizeColumn, minValue, maxValue);
+int[,] arrayRandomNumbers = Fill2DArrayWithRandomIntegerNumbers(sizeLine, sizeColumn, minValue, maxValue);
 Print2DArray(arrayRandomNumbers);
 System.Console.WriteLine();
 SortElementsOfAStringInOescendingOrder(arrayRandomNumbers);
@@ -33,7 +33,7 @@ int InputNumber(string invitationText)
 //------------------------------------------------------------------------------------------------------------------
 
 // Метод, формирующий двумерный массив, заполненный случайными  целыми числами. Размерность массива задается пользователем:
-int[,] Fill2DArrayWithRandomRealNumbers(int numLines, int numColumns, int leftRange, int rigthRange)
+int[,] Fill2DArrayWithRandomIntegerNumbers(int numLines, int numColumns, int leftRange, int rigthRange)
 {
 	int[,] fillableArray = new int[numLines, numColumns];
 	Random rand = new Random();
